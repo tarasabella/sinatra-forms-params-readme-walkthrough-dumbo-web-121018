@@ -8,8 +8,28 @@
   <body>
     <h1>Favorite Food</h1>
     <img src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSwGoDVUDPLd8f_397Fp9BrLKlu-6msu0sSiT0LeEZQ8Ga2228z">
+    params = {
+  :name => "Sam",
+  :favorite_food => "Green Eggs and Ham"
+}
 
     <!-- Insert Your Form Below -->
+    <form action="/food_form" method="POST">
+  Your Name: <input type="text" name="name">
+  Your Favorite Food: <input type="text" name="favorite_food">
+  Course Name: <input type="text" name="student[courses][][name]">
+  Course Topic: <input type="text" name="student[courses][][topic]">
+  Course Name: <input type="text" name="student[courses][][name]">
+  Course Topic: <input type="text" name="student[courses][][topic]">
+  <input type="submit">
+</form>
+<form method="POST" action="/food">
+  <p>Your Name: <input type="text" name="name"></p>
+  <p>Your Favorite Food: <input type="text" name="favorite_food"></p>
+  <input type="submit">
+</form>
 
+
+  <p>
   </body>
 </html>
